@@ -6,13 +6,20 @@ class Data(object):
     data =[]
 
     def __init__(self, size):
-        self.data = self.GenerateData(size)
+        self.data = self.generateData(size)
 
-    def GenerateData(self, size):
+    def generateData(self, size):
         generatedData= []
-        for i in range(size):
-            x= randint(1,101)
-            print(x)
-            generatedData.append(x)
+
+        for i in range(size//100):
+            p= Person(i, "I")
+            generatedData.append(p)
+
+        for i in range(size // 100, size):
+            p = Person(i, "S")
+            generatedData.append(p)
 
         return generatedData
+
+    def getData(self):
+        return  self.data

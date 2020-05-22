@@ -5,5 +5,11 @@ class Person(object):
         self.id = id
         self.type = type
 
-    def SetType(self, MyType):
+    def setType(self, MyType):
         self.type = MyType
+
+    def getId(self):
+        return self.id
+
+    def getType(self):
+        return self.type

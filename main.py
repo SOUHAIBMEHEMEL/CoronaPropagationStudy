@@ -4,7 +4,10 @@ import matplotlib.animation as animation
 from random import randint, randrange
 
 from src.Data import Data
-d= Data(3)
+
+# get data generated randomly (1% of people are infected as an initial cases)
+d= Data(10)
+
 
 degrees = []
 graph_transitivity = []
