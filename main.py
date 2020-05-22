@@ -3,8 +3,9 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from random import randint, randrange
 
-from src.Person import Person
-p= Person(1, 'S')
+from src.Data import Data
+d= Data(3)
+
 degrees = []
 graph_transitivity = []
 fig1 = plt.figure()
