@@ -8,6 +8,9 @@ from src.Data import Data
 # get data generated randomly (1% of people are infected as an initial cases)
 d= Data(10)
 
+# table des statistiques chaque jour { 0: 'S' , 1: 'I' , 2: 'D', 3: 'G'}
+statistiques = [[]]
+
 
 degrees = []
 graph_transitivity = []
