@@ -4,6 +4,7 @@ class Person(object):
     def __init__(self, id, type):
         self.id = id
         self.type = type
+        self.dureeInfection =0
 
     def setType(self, MyType):
         self.type = MyType
@@ -37,3 +38,9 @@ class Person(object):
             return True
         else:
             return False
+
+    def setDureeInfection(self, duree):
+        self.dureeInfection = duree
+
+    def getDureeInfection(self):
+        return self.dureeInfection
