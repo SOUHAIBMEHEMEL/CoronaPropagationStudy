@@ -11,11 +11,11 @@ class Data(object):
     def generateData(self, size):
         generatedData= []
 
-        for i in range(size//100):
+        for i in range(size//100+1):
             p= Person(i, "I")
             generatedData.append(p)
 
-        for i in range(size // 100, size):
+        for i in range(size // 100+1, size):
             p = Person(i, "S")
             generatedData.append(p)
 
